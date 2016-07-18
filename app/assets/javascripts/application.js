@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+jQuery(document).ready(function($) {
+			$('.banner').unslider({
+        arrows: false,
+        speed: 200,
+        delay: 200,
+        dots: true
+      });
+		});
