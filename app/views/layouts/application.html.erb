@@ -4,14 +4,18 @@
   <title>Max's Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/application.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-   <nav class="nav">
+   <nav>
       <h1>Max Goodman</h1>
-        <ul>
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-1 col-centered">
+           <ul class="nav-links">
           <li><%= link_to "Welcome |", root_path %></li>
           <li><%= link_to "About |", '/about' %></li>
           <li><%= link_to "Blog |", 'http://maxgrok.github.io/', :target =>
@@ -19,20 +23,14 @@
           <li><a href="#"><%= link_to "Portfolio |", '/portfolio' %> </a></li>
           <li><a href="#"><%= link_to "Contact", '/contact' %></a></li>
         </ul>
+         </div>
+       </div>
+     </div>   
     </nav>
   
 <%= yield %>
-  <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li><a href="www.github.com/maxgrok"><img src="http://imgur.com/O2HEbvW.png"></a></li>
-              <li><a href="#"><img src= "http://imgur.com/HhOITYY.png"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <footer>
+  	<%= link_to( image_tag("http://i.imgur.com/BNW84UU.png"), "http://www.github.com/maxgrok", :target =>"_blank" ) %>
   </footer>
 </body>
 </html>

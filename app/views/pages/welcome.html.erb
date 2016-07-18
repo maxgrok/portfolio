@@ -1,47 +1,45 @@
-
-      <div class="banner">
-          <ul>
-          <li ><img src="http://imgur.com/fu45V8Q.jpg" /></li>
-          <li><img src="http://imgur.com/scznCWD.jpg" /></li>
-          <li><img src="http://imgur.com/HHVfWQ7.jpg" /></li>
-        </ul>
-  		</div>
-
 <div class="container">
   <div class ="jumbotron">
       <h2 style="text-align:center;">
         I design and build web apps.
       </h2>
-     <div class="span7 text-center"><%= link_to "View my Work", '/portfolio' %></div> 
+     <div class="span7 text-center btn"><%= link_to "View my Work", '#work' %></div> 
     <div class="span7 text-center" style="padding-top:2%;">
-      <a href="https://www.github.com/maxgrok/"><img src="http://imgur.com/O2HEbvW.png" /></a>
-      <a href="https://www.linkedin.com/"><img src="http://imgur.com/HhOITYY.png" /></a>
+      <%= link_to( image_tag("http://i.imgur.com/BNW84UU.png"), "http://www.github.com/maxgrok", :target =>"_blank" ) %>
+      <%= link_to(image_tag("http://imgur.com/HhOITYY.png"), "http://www.linkedin.com/", :target => "_blank" ) %>
 		</div>  
   </div>
 </div>
-
+ <div class="banner">
+          <ul>
+          <li ><img src="http://imgur.com/X2PCLeb.jpg" /></li>
+          <li><img src="http://imgur.com/l4bZzRx.png" /></li>
+          <li><img src="http://imgur.com/HHVfWQ7.jpg" /></li>
+        </ul>
+  		</div>
+<div class="container">
     <div class="row" id="work">
-      <div class="col-md-4">
+      <div class="col-md-4 box">
         <ul>
-    			<li><img src="http://imgur.com/XONPYAJ.jpg" class="img-responsive" alt="image" width="360" height="193"/></li>
+    			<li><a href="#"><img src="http://imgur.com/XONPYAJ.jpg" class="img-responsive" alt="image" width="360" height="193"/></a></li>
           <li>Bookmarks</li>
           <li>Created a book review site using Rails associations. </li>
           <li>Technologies: Ruby on Rails, Ruby, HTML5, CSS3</li>
           <li><a href="https://bookmarks-rails-2633.herokuapp.com/books">Project Link</a></li>
         </ul>
     		</div>
-    		<div class="col-md-4">
+    		<div class="col-md-4 box">
           <ul>
-            <li><img src="http://i.imgur.com/JOe3tFp.png" class="img-responsive" alt="image" width="360" height="193"/></li>
+            <li><a href="#"><img src="http://i.imgur.com/JOe3tFp.png" class="img-responsive" alt="image" width="360" height="193"/></a></li>
              <li>Bass Music</li>
           <li>Created a music catalog application using Rails associations.</li>
             <li>Technologies: Ruby on Rails, Ruby, HTML5, CSS3</li>
           <li><a href="https://bass-music-rails.herokuapp.com/albums">Project Link</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 box">
           <ul>
-            <li><img src="http://imgur.com/q67coti.jpg" class="img-responsive" alt="image" width="360" height="193"/></li>
+            <li><a href="#"><img src="http://imgur.com/q67coti.jpg" class="img-responsive" alt="image" width="360" height="193"/></a></li>
              <li>Threadly</li>
           	<li>Created a discussion forum using a Rails model.</li>
             <li>Technologies: Ruby on Rails, Ruby, HTML5, CSS3</li>
@@ -49,28 +47,29 @@
           </ul>
         </div>
     </div>
+
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 box">
         <ul>
-    <li><img src="http://imgur.com/HGU0Wdk.jpg" class="img-responsive" alt="image" width="360" height="193"/></li>
+    <li><a href="#"><img src="http://imgur.com/HGU0Wdk.jpg" class="img-responsive" alt="image" width="360" height="193"/></a></li>
           <li>Innovation Cloud</li>
           <li>Created a one page web app that uses a model to save email addresses.</li>
           <li>Technologies: Ruby on Rails, Ruby, HTML5, CSS3</li>
           <li><a href="https://innovation-cloud-rails.herokuapp.com/">Project Link</a></li>
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 box">
         <ul>
-    <li><img src="http://imgur.com/fu45V8Q.jpg" class="img-responsive" alt="image" width="360" height="193"/></li>
+    <li><a href="#"><img src="http://imgur.com/fu45V8Q.jpg" class="img-responsive" alt="image" width="360" height="193"/></a></li>
           <li>Bolt Network</li>
           <li>Created two page web app for movie network using Rails layout view and view helper.</li>
           <li>Technologies: Ruby on Rails, Ruby, HTML5, CSS3</li>
           <li><a href="https://bolt-network-rails.herokuapp.com/">Project Link</a></li>
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 box">
         <ul>
-    <li><img src="http://imgur.com/AtgMTIe.jpg" class="img-responsive" alt="image" width="360" height="193"/></li>
+    <li><a href=#"><img src="http://imgur.com/AtgMTIe.jpg" class="img-responsive" alt="image" width="360" height="193"/></a></li>
           <li>Broadway</li>
           <li>Created a one page static RoR app.</li>
           <li>Technologies: Ruby on Rails, Ruby, HTML5, CSS3</li>
@@ -78,3 +77,5 @@
         </ul>
       </div>
     </div>
+
+</div>

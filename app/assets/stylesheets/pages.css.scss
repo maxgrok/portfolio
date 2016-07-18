@@ -9,25 +9,10 @@ background:url('http://i.imgur.com/Ku3cK7v.jpg') no-repeat center center fixed;
   background-size: cover; 
 }
 
-.nav h1{
-  color:white;
-  font-weight:bold;
-}
-
-.nav ul li{
-  display:inline;
-  padding: 5 5 5 5;
-  margin:0 auto;
-  list-style-type:none;
-}
-.nav ul li a{
-  text-decoration: none;
-  color:white;
-}
-
 .jumbotron{
   background-color: rgba(255,255,255,0.8);
 }
+
 .btn{
   background-color: green;
   color:white;
@@ -54,7 +39,7 @@ background: #000000;
 box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
- .banner ul {
+.banner ul {
     list-style: none;
     width: 300%;
 }
@@ -75,6 +60,10 @@ box-shadow: 0 1px 2px rgba(0,0,0,.25);
 
 #work{
   background-color: (128,128,128,0.5);
+}
+.col-md-4 .box{
+  background-color: rgba(128,128,128,0.5);
+  padding:5 5 5 5;
 }
 .col-md-4 li{
   color:white;
