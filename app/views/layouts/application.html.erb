@@ -4,14 +4,14 @@
   <title>Max's Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheets/application.css">
+  <link rel="stylesheet" href="../stylesheets/application.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
    <nav>
-      <h1>Max Goodman</h1>
+    <h1>Max Goodman</h1>
      <div class="container">
        <div class="row">
          <div class="col-md-12 col-centered">
@@ -20,7 +20,6 @@
           <li><%= link_to "About |", '/about' %></li>
           <li><%= link_to "Blog |", 'http://maxgrok.github.io/', :target =>
 "_blank" %></li>
-          <li><a href="#"><%= link_to "Portfolio |", '/portfolio' %> </a></li>
           <li><a href="#"><%= link_to "Contact", '/contact' %></a></li>
         </ul>
          </div>
