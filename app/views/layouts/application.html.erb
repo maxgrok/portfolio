@@ -2,31 +2,31 @@
 <html>
 <head>
   <title>Max's Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+>
   <link rel="stylesheet" href="../stylesheets/application.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-   <nav>
-    <h1>Max</h1>
-     <div class="container">
-       <div class="row">
-         <div class="col-md-12 col-centered">
-           <ul class="nav-links">
-          <li><%= link_to "Welcome |", root_path %></li>
-          <li><%= link_to "About |", '/about' %></li>
-          <li><%= link_to "Blog |", 'http://maxgrok.github.io/', :target =>
-"_blank" %></li>
-          <li><a href="#"><%= link_to "Contact", '/contact' %></a></li>
-        </ul>
-         </div>
-       </div>
-     </div>   
-    </nav>
-  
+  <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+    <a class="navbar-brand" href="/">Max</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Welcome <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://maxgrok.github.io/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 <%= yield %>
   <footer>
   	<%= link_to( image_tag("http://i.imgur.com/BNW84UU.png"), "http://www.github.com/maxgrok", :target =>"_blank" ) %>
